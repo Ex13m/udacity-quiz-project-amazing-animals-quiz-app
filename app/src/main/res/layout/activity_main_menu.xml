@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.amazinganimalsquiz.MainMenuActivity"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/nglogo" />
+
+    <Button
+        android:id="@+id/amphibiansBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/amphibian" />
+
+    <Button
+        android:id="@+id/birdsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/birds" />
+
+    <Button
+        android:id="@+id/fishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/fish" />
+
+    <Button
+        android:id="@+id/insectsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/insects" />
+
+    <Button
+        android:id="@+id/reptilesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/reptiles" />
+
+    <Button
+        android:id="@+id/mammalsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/mammals" />
+
+    <Button
+        android:id="@+id/invertibratesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/invertebrates" />
+
+    <Button
+        android:id="@+id/quizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/qwizblue" />
+
+</LinearLayout>

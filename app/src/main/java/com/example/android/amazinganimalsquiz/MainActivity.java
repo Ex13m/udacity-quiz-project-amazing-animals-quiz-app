@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     userName = nameEnter.getText().toString(); // приводим к типу String
                     Toast.makeText(MainActivity.this,
                                userName, Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
                     startActivity(intent);
                     //Делаем то, что нам нужно...
                     consumed = true; //это если не хотим, чтобы нажатая кнопка обрабатывалась дальше видом, иначе нужно оставить false
