@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context="com.example.android.amazinganimalsquiz.MainMenuActivity"
 
     >
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ngLogo"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:padding="8dp"
         android:layout_weight="1"
-        android:background="@color/colorPrimary"
+        android:padding="8dp"
         app:srcCompat="@drawable/nglogo" />
 
     <Button

@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenuActivity"></activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".animals.libreres.AmphibiansActivity" />
+        <activity android:name=".amphibians.MexicanAxolotl"></activity>
     </application>
 
 </manifest>

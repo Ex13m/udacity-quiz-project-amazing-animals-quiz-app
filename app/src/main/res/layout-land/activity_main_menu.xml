@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context="com.example.android.amazinganimalsquiz.MainMenuActivity"
 
     >
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ngLogo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="4"
-        android:background="@color/colorPrimary"
         android:padding="8dp"
         app:srcCompat="@drawable/nglogo" />
 
@@ -47,18 +47,18 @@
                 android:background="@drawable/birds" />
 
             <Button
-                android:id="@+id/insectsBtn"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:background="@drawable/insects" />
-
-            <Button
                 android:id="@+id/fishBtn"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/fish" />
+
+            <Button
+                android:id="@+id/insectsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/insects" />
 
         </LinearLayout>
 
@@ -69,11 +69,11 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/invertibratesBtn"
+                android:id="@+id/reptilesBtn"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/invertebrates" />
+                android:background="@drawable/reptiles" />
 
             <Button
                 android:id="@+id/mammalsBtn"
@@ -83,11 +83,11 @@
                 android:background="@drawable/mammals" />
 
             <Button
-                android:id="@+id/reptilesBtn"
+                android:id="@+id/invertibratesBtn"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
-                android:background="@drawable/reptiles" />
+                android:background="@drawable/invertebrates" />
 
             <Button
                 android:id="@+id/quizBtn"

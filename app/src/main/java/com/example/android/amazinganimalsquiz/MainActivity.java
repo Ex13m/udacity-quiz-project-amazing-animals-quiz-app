@@ -85,10 +85,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 boolean consumed = false;
                 if (keyCode == KEYCODE_ENTER) {
-                    userName = nameEnter.getText().toString(); // приводим к типу String
-                    Toast.makeText(MainActivity.this,
-                               userName, Toast.LENGTH_SHORT).show();
+
                     Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
+                    intent.putExtra("userName", nameEnter.getText().toString());
+                    Toast.makeText(MainActivity.this,
+                            "Welcome to world of animal"+" "+ nameEnter.getText() +""+"!", Toast.LENGTH_LONG).show();
                     startActivity(intent);
                     //Делаем то, что нам нужно...
                     consumed = true; //это если не хотим, чтобы нажатая кнопка обрабатывалась дальше видом, иначе нужно оставить false
@@ -103,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
     //**************************SOME ANIMATIONS***********************
 
     //View animation library - https://github.com/daimajia/AndroidViewAnimations
-    //Method for animated text (Big Score)
-    private void startAnimationLogo(View view) {
+    //Method for logo (National Geographic Kids)
+    public static void startAnimationLogo(View view) {
         //without params
         YoYo.with(Techniques.FadeIn).duration(1000).playOn(view);
         //with params
@@ -115,12 +116,12 @@ public class MainActivity extends AppCompatActivity {
         //
     }
 
-    private void startAnimationCopyright(View view) {
-        YoYo.with(Techniques.FadeIn).playOn(view);
-    }
 
     private void startAnimationTextEdit(View view) {
         YoYo.with(Techniques.Shake).duration(3000).playOn(view);
+
+    //animations for
+
 
     }
     //**********************************************************************************************
