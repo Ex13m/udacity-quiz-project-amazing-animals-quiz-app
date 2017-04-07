@@ -61,17 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+// Video on backgound
     private void setUpMediaPlayer() {
-        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.birds);
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2);
         mVideoView.setVideoURI(uri);
-
         mVideoView.start();
-
-
         mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-
-
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
                 mediaPlayer.setLooping(true);

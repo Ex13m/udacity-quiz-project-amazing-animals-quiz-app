@@ -1,9 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.android.amazinganimalsquiz.amphibians.MexicanAxolotl">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ngLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            app:srcCompat="@drawable/nglogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="MEXICAN AXOLOTL"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mexicanaxolotl1" />
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:scaleType="fitStart"-->
+                    <!--app:srcCompat="@drawable/mexicanaxolotl1"-->
+                    <!--android:onClick="onClick"/>-->
+
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tap on picture for change foto."
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:padding="4dp"
+                    android:text="OVERVIEW"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="4dp"
+                    android:text="Mexican axolotl (pronounced ACK-suh-LAH-tuhl) salamanders are amphibians that spend their whole lives underwater. They exist in the wild in only one place—the lake complex of Xochimilco (pronounced SO-chee-MILL-koh), a network of artificial channels, small lakes, and temporary wetlands that help supply water to nearby Mexico City’s 18 million residents.   Axolotls have long fascinated scientists for their ability to regenerate lost body parts and for their rare trait of neoteny, which means they retain larval features throughout life. Rather than undergoing typical metamorphosis, axolotls keep their youthful appearance, including their tadpolelike dorsal fin and feathery external gills that fan out from the head. As they age, axolotls simply get bigger and bigger, like amphibious Peter Pans.   In rare cases, axolotls have matured past the larval stage and emerged onto land as adult salamanders. Neoteny doesn’t affect the axolotl’s ability to breed. Females mate with males and lay eggs underwater.   As Mexico City has grown, the lake complex has shrunk and parts have become contaminated, distressing the axolotl population. The introduction of large numbers of carp and tilapia fish, which compete with axolotls for food and also eat axolotl eggs, has further lowered their population. A 2009 survey suggests there are fewer than 1,200 axolotls in the Xochimilco Lake complex.   Axolotls feast on a menu of mollusks, worms, insect larvae, crustaceans, and some fish."
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="SCIENTIFIC NAME"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Ambystoma mexicanum"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="FAMILY NAME"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Ambystomatidae"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:typeface="normal" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="HABITAT"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Freshwater"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="ENDANGERED STATUS"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_light"
+                    android:drawableLeft="@android:drawable/ic_menu_info_details"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical|start"
+                    android:padding="4dp"
+                    android:text="CRITICALLY ENDANGERED"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="CLASSIFICATION"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Amphibian"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="LIFE SPAN"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="10 to 15 years"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="DIET"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Carnivore"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="RANGE"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mexicanaxolotlmap" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
