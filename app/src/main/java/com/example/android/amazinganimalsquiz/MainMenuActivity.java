@@ -152,6 +152,8 @@ protected void animationOfButtonsWhenActivityStart(Techniques techniques){
 
     }
 
+//**************************************************************************************************
+
 
 
 }

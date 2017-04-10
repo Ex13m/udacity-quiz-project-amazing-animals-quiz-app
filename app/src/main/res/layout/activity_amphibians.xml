@@ -11,40 +11,84 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="6"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/ngLogo"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="8dp"
-            app:srcCompat="@drawable/nglogo" />
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/amphibiansLogo"
+            <ImageView
+                android:id="@+id/ngLogo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                app:srcCompat="@drawable/nglogo" />
+
+            <ImageView
+                android:id="@+id/amphibiansLogo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/amphibian" />
+        </LinearLayout>
+
+
+        <!--http://www.cyberforum.ru/android-dev/thread1076680.html manual-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/amphibian" />
+            android:layout_weight="2"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/amphibiansTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="Amphibians are cold-blooded vertebrates (vertebrates have backbones) that don’t have scales. They live part of their lives in water and part on land."
-            android:textColor="@android:color/background_light"
-            android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amphibiansTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="About:  Amphibians are cold-blooded vertebrates (vertebrates have backbones) that don’t have scales. They live part of their lives in water and part on land."
+                    android:textColor="@android:color/background_light"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:orientation="vertical">
 
         <LinearLayout
@@ -58,8 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/maxicanaxolotl"
-                android:text="Button" />
+                android:background="@drawable/maxicanaxolotl" />
 
             <Button
                 android:id="@+id/poisondartfrogBtn"
@@ -67,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/poisondartfrog"
-                android:text="Button" />
+                android:text="utton" />
         </LinearLayout>
 
         <LinearLayout
@@ -81,16 +124,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/salamander"
-                android:text="Button" />
+                android:background="@drawable/salamander" />
 
             <Button
                 android:id="@+id/redeyedtreefrogBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/redeyedtreefrog"
-                android:text="Button" />
+                android:background="@drawable/redeyedtreefrog" />
         </LinearLayout>
     </LinearLayout>
 
