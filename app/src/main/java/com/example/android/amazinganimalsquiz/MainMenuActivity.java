@@ -12,10 +12,12 @@ import android.widget.Toast;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.example.android.amazinganimalsquiz.animals.libreres.AmphibiansActivity;
+import com.example.android.amazinganimalsquiz.animals.libreres.QuizActivity;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 import static android.os.Build.VERSION_CODES.M;
 import static com.example.android.amazinganimalsquiz.R.id.amphibiansBtn;
+import static com.example.android.amazinganimalsquiz.R.id.nameEnter;
 import static com.example.android.amazinganimalsquiz.R.id.ngLogo;
 
 public class MainMenuActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,7 +26,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     private Button birdsBtn;
     private Button fishBtn;
     private Button insectsBtn;
-    private Button invetribratesBtn;
+    private Button invertibratesBtn;
     private Button mammalsBtn;
     private Button qwizblueBtn;
     private Button reptilesBtn;
@@ -35,10 +37,11 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+        userName = getUserNameFromMainActivity();
         setUpBtnAndTxt();
         MainActivity.startAnimationLogo(ngLogo);
         animationOfButtonsWhenActivityStart(Techniques.ZoomIn);
-        getUserNameFromMainActivity();
+
 
 
     }
@@ -80,6 +83,13 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
                 //Toast.makeText(this, "point for Player 1", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.quizBtn:
+                Intent intent1 = new Intent(MainMenuActivity.this, QuizActivity.class);
+                animationOfButtonsWhenActivityClosed(Techniques.ZoomOut);
+                Toast.makeText(MainMenuActivity.this,
+                        "Let's check the knowledge "+" "+ userName +""+"!", Toast.LENGTH_SHORT).show();
+                intent1.putExtra("userName", userName);
+                startActivity(intent1);
+
                 //Toast.makeText(this, "point for Player 1", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -98,7 +108,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         birdsBtn = (Button) findViewById(R.id.birdsBtn);
         fishBtn=(Button)findViewById(R.id.fishBtn);
         insectsBtn=(Button)findViewById(R.id.insectsBtn);
-        invetribratesBtn=(Button)findViewById(R.id.invertibratesBtn);
+        invertibratesBtn=(Button)findViewById(R.id.invertibratesBtn);
         mammalsBtn=(Button)findViewById(R.id.mammalsBtn);
         reptilesBtn=(Button)findViewById(R.id.reptilesBtn);
         qwizblueBtn=(Button)findViewById(R.id.quizBtn);
@@ -106,14 +116,13 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         birdsBtn.setOnClickListener(this);
         fishBtn.setOnClickListener(this);
         insectsBtn.setOnClickListener(this);
-        invetribratesBtn.setOnClickListener(this);
+        invertibratesBtn.setOnClickListener(this);
         mammalsBtn.setOnClickListener(this);
         reptilesBtn.setOnClickListener(this);
         qwizblueBtn.setOnClickListener(this);
 
     }
 /*                          animations                                          */
-
 public void btnAnimations(View view,Techniques techniques,int duration) {
         //without params
         YoYo.with(techniques).duration(duration).playOn(view);
@@ -124,7 +133,6 @@ public void btnAnimations(View view,Techniques techniques,int duration) {
         //                .playOn(view);
         //
     }
-
 protected void animationOfButtonsWhenActivityStart(Techniques techniques){
         btnAnimations(amphibianBtn,techniques,400);
         btnAnimations(birdsBtn,techniques,500);
@@ -132,7 +140,7 @@ protected void animationOfButtonsWhenActivityStart(Techniques techniques){
         btnAnimations(insectsBtn,techniques,700);
         btnAnimations(reptilesBtn,techniques,800);
         btnAnimations(mammalsBtn,techniques,900);
-        btnAnimations(invetribratesBtn,techniques,1000);
+        btnAnimations(invertibratesBtn,techniques,1000);
         btnAnimations(qwizblueBtn,techniques,1100);
     }
     protected void animationOfButtonsWhenActivityClosed(Techniques techniques){
@@ -142,18 +150,17 @@ protected void animationOfButtonsWhenActivityStart(Techniques techniques){
         btnAnimations(insectsBtn,techniques,700);
         btnAnimations(reptilesBtn,techniques,800);
         btnAnimations(mammalsBtn,techniques,900);
-        btnAnimations(invetribratesBtn,techniques,1000);
+        btnAnimations(invertibratesBtn,techniques,1000);
         btnAnimations(qwizblueBtn,techniques,1100);
     }
-
-    private void getUserNameFromMainActivity(){
-        Intent intent= getIntent();
-        userName = intent.getStringExtra("userName");
-
-    }
-
 //**************************************************************************************************
 
 
+/*                         Get user name from MainActivity                       */
+    private String getUserNameFromMainActivity(){
+        Intent intent= getIntent();
+        return intent.getStringExtra("userName");
 
+    }
+//**************************************************************************************************
 }

@@ -10,6 +10,74 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
+
+        <!--Quiz Activity Styles-->
+    </style>
+    <style name="MyEditTextTheme">
+
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#FFF59D</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+    <style name="QuestionsTxt" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/questionsText</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">16dp</item>
+
+    </style>
+
+    <style name="CheckBoxes" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:checked">false</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/checkBoxAndRadioBtnText</item>
+
+
+    </style>
+    <style name="RadioBtn" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/checkBoxAndRadioBtnText</item>
+        <item name="android:checked">false</item>
+
+    </style>
+
+    <style name="resultAndTryBtnBtn" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/resultAndBtnText</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+
+    </style>
+    <style name="showResultTxt" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/resultAndBtnText</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+
     </style>
 
 </resources>

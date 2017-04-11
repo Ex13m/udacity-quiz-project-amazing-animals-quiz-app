@@ -4,4 +4,22 @@
     <string name="national_geographic_kids_c">National Geographic Kids (c)</string>
     <string name="amphibians_short_msg">Amphibians are cold-blooded vertebrates (vertebrates have backbones) that don’t have scales. They live part of their lives in water and part on land.</string>
     <string name="mexican_axolotl_long_txt">Mexican axolotl (pronounced ACK-suh-LAH-tuhl) salamanders are amphibians that spend their whole lives underwater. They exist in the wild in only one place—the lake complex of Xochimilco (pronounced SO-chee-MILL-koh), a network of artificial channels, small lakes, and temporary wetlands that help supply water to nearby Mexico City’s 18 million residents. Axolotls have long fascinated scientists for their ability to regenerate lost body parts and for their rare trait of neoteny, which means they retain larval features throughout life. Rather than undergoing typical metamorphosis, axolotls keep their youthful appearance, including their tadpolelike dorsal fin and feathery external gills that fan out from the head. As they age, axolotls simply get bigger and bigger, like amphibious Peter Pans. In rare cases, axolotls have matured past the larval stage and emerged onto land as adult salamanders. Neoteny doesn’t affect the axolotl’s ability to breed. Females mate with males and lay eggs underwater. As Mexico City has grown, the lake complex has shrunk and parts have become contaminated, distressing the axolotl population. The introduction of large numbers of carp and tilapia fish, which compete with axolotls for food and also eat axolotl eggs, has further lowered their population. A 2009 survey suggests there are fewer than 1,200 axolotls in the Xochimilco Lake complex. Axolotls feast on a menu of mollusks, worms, insect larvae, crustaceans, and some fish.</string>
+    <string name="question1Txt">Question 1 : What types of animals do you know?</string>
+    <string name="question2Txt">Question 2 : Are this animals amphibious?</string>
+    <string name="question3Txt">Question 3 : Do you know the name of this animal?</string>
+    <string name="question4Txt">Question 4 : Is it a fish or a crocodile?</string>
+    <string name="amphibiansQQ">amphibians</string>
+    <string name="fishQQ">Fish</string>
+    <string name="birdsQQ">birds</string>
+    <string name="reptilesQQ">Reptiles</string>
+    <string name="zverinusQQ">Zverinus</string>
+    <string name="insectsQQ">insects</string>
+    <string name="yesQQ">YES</string>
+    <string name="noQQ">NO</string>
+    <string name="enter_animal_name_QQ">Enter animal name</string>
+    <string name="fish2QQ">fish</string>
+    <string name="crocodile2QQ">crocodile</string>
+    <string name="sea_your_results_hereQQ">sea your results here</string>
+    <string name="show_resultsQQ">show results</string>
+    <string name="try_againQQ">try again</string>
 </resources>

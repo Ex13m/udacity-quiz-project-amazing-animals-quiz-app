@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="questionsText">30sp</dimen>
+    <dimen name="checkBoxAndRadioBtnText">14sp</dimen>
+    <dimen name="resultAndBtnText">18sp</dimen>
+    <dimen name="editText">24sp</dimen>
+
+</resources>
