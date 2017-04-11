@@ -158,12 +158,12 @@ public class QuizActivity extends AppCompatActivity {
 
         } else if (Score == 2 || Score == 3) {
             Toast.makeText(QuizActivity.this, "You know a lot of animals, but not all.", Toast.LENGTH_SHORT).show();
-            resultTxt.setText("You result:" + Score + " " + " correct answers on 4 questions. " +
+            resultTxt.setText("You result" + " " + userName + "" + ":" + " " + Score + " " + " correct answers on 4 questions. " +
                     "You know a lot of animals, but not all.");
 
         } else {
             Toast.makeText(QuizActivity.this, "You're just down, man!", Toast.LENGTH_SHORT).show();
-            resultTxt.setText("You result:" + Score + " " + " correct answers on 4 questions. " +
+            resultTxt.setText("You result" + " " + userName + "" + ":" + " " + Score + " " + " correct answers on 4 questions. " +
                     "You're just down, man!");
         }
         restartParams();
@@ -195,6 +195,8 @@ public class QuizActivity extends AppCompatActivity {
 
     //setup variables
     public void setUp(){
+        Toast.makeText(QuizActivity.this,
+                "Let's check the knowledge "+" "+ userName +""+"!", Toast.LENGTH_SHORT).show();
         checkBox1=(CheckBox)findViewById(R.id.checkBox1);
         checkBox2=(CheckBox)findViewById(R.id.checkBox2);
         checkBox3=(CheckBox)findViewById(R.id.checkBox3);

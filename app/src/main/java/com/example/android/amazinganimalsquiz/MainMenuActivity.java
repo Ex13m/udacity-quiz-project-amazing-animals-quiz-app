@@ -85,8 +85,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
             case R.id.quizBtn:
                 Intent intent1 = new Intent(MainMenuActivity.this, QuizActivity.class);
                 animationOfButtonsWhenActivityClosed(Techniques.ZoomOut);
-                Toast.makeText(MainMenuActivity.this,
-                        "Let's check the knowledge "+" "+ userName +""+"!", Toast.LENGTH_SHORT).show();
+
                 intent1.putExtra("userName", userName);
                 startActivity(intent1);
 
