@@ -17,6 +17,7 @@ import android.widget.VideoView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.example.android.amazinganimalsquiz.animals.libreres.QuizActivity;
 
 
 import static android.view.KeyEvent.KEYCODE_ENTER;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-// Video on backgound
+// Video on background
     private void setUpMediaPlayer() {
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2);
         mVideoView.setVideoURI(uri);
@@ -75,22 +76,22 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     private void nextActivityStart() {
         nameEnter.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 boolean consumed = false;
-                if (keyCode == KEYCODE_ENTER) {
-
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
                     intent.putExtra("userName", nameEnter.getText().toString());
+
                     Toast.makeText(MainActivity.this,
-                            "Welcome to world of animal"+" "+ nameEnter.getText() +""+"!", Toast.LENGTH_LONG).show();
+                            "Welcome to world of animals"+" "+ nameEnter.getText() +""+"!", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                     //Делаем то, что нам нужно...
                     consumed = true; //это если не хотим, чтобы нажатая кнопка обрабатывалась дальше видом, иначе нужно оставить false
-
                 }
-
                 return consumed;
             }
         });
