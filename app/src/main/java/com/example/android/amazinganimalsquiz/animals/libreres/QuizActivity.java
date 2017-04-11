@@ -148,6 +148,8 @@ public class QuizActivity extends AppCompatActivity {
     //btn show results method
     public void onShowResultsClicked(View view) {
         checkBoxAnswerControl();
+//for debug
+//        Toast.makeText(QuizActivity.this, "Score" + " "  + Score, Toast.LENGTH_SHORT).show();
         if (Score == 4) {
             Toast.makeText(QuizActivity.this, "You're just a genius in th world of animals!", Toast.LENGTH_SHORT).show();
             resultTxt.setText("You result" + " " + userName + "" + ":" + " " + Score + " " + " correct answers on 4 questions. " +
